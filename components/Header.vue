@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <a href="/"><h1>idea dump.</h1></a>
+    <NuxtLink to="/"><h1>idea dump.</h1></NuxtLink>
     <div class="nav">
       <NuxtLink to="/ideas">idea?</NuxtLink>
       <NuxtLink to="/about">about us.</NuxtLink>

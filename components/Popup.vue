@@ -7,7 +7,7 @@
         <h2 class="ideaname">
           {{ name }}
         </h2>
-        <p class="ideadesc">{{ desc }}</p>
+        <p class="ideadesc">{{ desc }} {{ _id }}</p>
         <span id="closeTxt">click anywhere outside to close this window</span>
       </div>
     </div>
@@ -24,8 +24,8 @@ export default {
     clickOutside: vClickOutside.directive,
   },
   props: {
-    id: {
-      type: Number,
+    _id: {
+      type: String,
       required: true,
     },
     name: {
