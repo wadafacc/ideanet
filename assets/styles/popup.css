@@ -1,0 +1,92 @@
+#closeX{display: block;}
+#closeTxt{display:none;}
+
+@media screen and (max-width: 900px) {
+    #closeX{display: none;}
+    #closeTxt{display:block;}
+  }
+
+.popup {
+    position:absolute;
+    top:0;
+    float:right;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg{
+    position: absolute;
+    top:0;
+    height:100%;
+    width:100%;
+    opacity: 0.7;
+    background-color: black;
+}
+.container{
+    position: relative;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    height:40rem;
+    width: 40rem;
+    max-width: 60%;
+    max-height: 60%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: #dfdfdf -0.3rem 0.3rem;
+}
+.ideaname {
+    display: block;
+    font-family: 'Source Serif 4', sans-serif;    
+    float: left;
+    min-height: 3rem;
+    max-height: 10rem;
+    height:max-content;
+    font-size: 2rem;
+    width: 30rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+.text{
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.ideadesc{
+    font-family: 'Quicksand', sans-serif;
+    float: left;
+    display: block;
+    max-width: 100%;
+    color: #000000;
+    font-size: 1.2rem;
+    overflow: hidden;
+    max-height: 24rem;
+}
+
+#closeX{
+    position: absolute;
+    right:0;
+    top:0;
+    font-family: 'Yellowtail', cursive;
+    float: right;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#closeX:hover{
+    color: #465c69;
+    transition: 0.4s;
+}
+#closeTxt{
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+
+    color:rgb(95, 95, 95);
+    position: absolute;
+    bottom:0;
+}

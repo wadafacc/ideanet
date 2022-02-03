@@ -1,0 +1,36 @@
+.container {
+    color: white;
+    background-color: #053C5E;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    height: 4rem;
+    width: fit-content;
+    max-width: 40rem;
+    padding: 1rem;
+    box-shadow: #04A777 -0.2rem 0.2rem;
+    margin: 0.5rem;
+}
+.container:hover {
+    background-color: #465c69;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.ideaname {
+    float: left;
+    display:block;
+    line-clamp: 2; 
+    font-family: 'Source Serif 4', sans-serif;    
+    font-size: 1.5rem;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    width:100%;
+    height:100%;
+}
+.ideaid {
+    float: left;
+    display: block;
+    width: 100%;
+    color: #00ffdd;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Yellowtail&display=swap');
+
+/*
+font-family: 'Amatic SC', cursive;
+font-family: 'Bad Script', cursive;
+font-family: 'Zen Kurenaido', sans-serif;
+*/
+
+/*
+-----colors------
+teal #3dbea7
+reddish #7C2E41
+*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:#1d2029;
+
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 4rem;
+}
+a:hover{
+    text-decoration: underline;
+}
+h3{
+    color:rgb(255, 255, 255);
+    font-family: 'Amatic SC', cursive;
+    font-size: 7rem;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ideas{
+    margin: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
