@@ -14,6 +14,14 @@ font-family: 'Zen Kurenaido', sans-serif;
 teal #3dbea7
 reddish #7C2E41
 */
+#mobilenav{display: none;}
+#desktopnav{display:block;}
+@media screen and (max-width: 900px) {
+    #mobilenav{display: block;}
+    #desktopnav{display:none;}
+  }
+
+
 *{
     margin:0;
     padding:0;
@@ -33,7 +41,12 @@ a:hover{
 h3{
     color:rgb(255, 255, 255);
     font-family: 'Amatic SC', cursive;
-    font-size: 7rem;
+    font-size: 5rem;
+}
+h4{
+    color:rgb(255, 255, 255);
+    font-family: 'Amatic SC', cursive;
+    font-size: 5rem;
 }
 
 .flex{

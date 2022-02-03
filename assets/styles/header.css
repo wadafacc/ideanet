@@ -1,18 +1,61 @@
+h1{
+    font-size: 6rem;
+    padding-left:1rem;
+    float: left;
+}
 .header{
     font-family: 'Zen Kurenaido', sans-serif;
     background-color: #3dbea7;
     height:10rem;
     color:white;
 }
-h1{
-    font-size: 6rem;
-    padding-left:1rem;
-    float: left;
-}
 .nav{
-    padding: 2rem;
+    position: relative;
+    top:25%;
+    width:100%;
+    text-align: center;
 }
 .nav a{
+    display: block;
     margin:0.5rem;
     margin-left: 1rem;
+}
+.closebtn:hover{
+    text-decoration: none !important;
+    color: gray;
+    transition: 0.5s;
+}
+.overlay{
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #3dbea7;
+    background-color: #3dbea7;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 3rem;
+}
+.title{
+    position: relative;
+    z-index: 3;
+}
+#openbtn{
+    cursor: pointer;
+    position: relative;
+    top:1rem;
+    font-size: 4rem;
+    padding-right: 2rem;
+    float:right;
+}
+#openbtn:hover{
+    color: gray;
+    transition: 0.5s;
 }

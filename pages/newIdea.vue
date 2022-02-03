@@ -1,31 +1,47 @@
 <template>
   <div>
     <Header />
-    <form action="" method="post" v-on:submit.prevent="onSubmit()">
-      <input
-        type="text"
-        name="ideaname"
-        id="name"
-        placeholder="your idea."
-        v-model="name"
-        required
-      />
-      <input
-        type="text"
-        name="ideadesc"
-        id="desc"
-        placeholder="description."
-        v-model="desc"
-        required
-      />
-      <input type="submit" value="submit" />
-    </form>
+    <h3 class="flex">idea for an idea?</h3>
+    <div class="flex">
+      <form action="" method="post" v-on:submit.prevent="onSubmit()" id="frm">
+        <input
+          type="text"
+          name="ideaname"
+          id="name"
+          placeholder="your idea."
+          v-model="name"
+          required
+        />
+        <textarea
+          name="ideadesc"
+          id="desc"
+          placeholder="description."
+          v-model="desc"
+          required
+          cols="60"
+          rows="10"
+          form="frm"
+        ></textarea>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+    <div class="flex">
+      <h4 v-if="success"><i>idea uploaded!</i></h4>
+    </div>
   </div>
 </template>
+
+<style src="~/assets/styles/form.css" scoped>
+</style>
 
 <script>
 import axios from "axios";
 export default {
+  data() {
+    return {
+      success: false,
+    };
+  },
   props: {
     name: {
       type: String,
@@ -43,23 +59,15 @@ export default {
         desc: this.desc,
       };
       axios
-        .post(
-          "https://getform.io/f/{unique-endpoint-generated-on-step-1}",
-          data,
-          {
-            headers: {
-              Accept: "application/json",
-            },
-          }
-        )
-        .then(
-          (response) => {
-            this.isSuccess = response.data.success ? true : false;
+        .post("http://localhost:6969/createIdea", data, {
+          headers: {
+            Accept: "application/json",
           },
-          (response) => {
-            // Error
-          }
-        );
+        })
+        .then((res) => {
+          console.log(res);
+          this.success = res.data.success ? true : false;
+        });
     },
   },
   head() {

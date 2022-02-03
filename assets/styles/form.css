@@ -1,0 +1,39 @@
+input, button, textarea{
+    font-family: 'Source Serif 4', sans-serif;    
+
+    display: block;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #053C5E;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    box-shadow: #04A777 -0.2rem 0.2rem;
+    margin: 1rem;
+}
+
+::placeholder{
+   color:white;
+}
+
+input[type="submit"]:hover {
+    background-color: #465c69;
+    transition: 0.5s;
+}
+input[type="text"]:focus {
+    background-color: #465c69;
+}
+textarea:focus{
+    background-color: #465c69;
+}
+button:hover {
+    background-color: #465c69;
+    transition: 0.5s;
+}
+#desc{
+    height:10rem;
+    min-width: 26.5rem;
+    min-height: 10rem;
+    max-height:30rem;
+    max-width: 26.5rem;
+}
