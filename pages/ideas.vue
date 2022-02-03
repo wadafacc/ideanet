@@ -58,7 +58,7 @@ export default {
     };
   },
   async fetch() {
-    this.ideas = await fetch("http://localhost:6969/getIdeas", {
+    this.ideas = await fetch("https://ideanetapi.herokuapp.com/getIdeas", {
       mode: "cors",
     }).then((res) => res.json());
   },
