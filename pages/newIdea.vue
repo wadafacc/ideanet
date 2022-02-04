@@ -59,7 +59,7 @@ export default {
         desc: this.desc,
       };
       axios
-        .post("http://localhost:6969/createIdea", data, {
+        .post("https://ideanetapi.herokuapp.com/createIdea", data, {
           headers: {
             Accept: "application/json",
           },
